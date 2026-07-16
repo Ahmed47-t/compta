@@ -1,7 +1,7 @@
 # ADR-0001: المعمارية العامة للمشروع ومكدس التطوير (Tech Stack & Architecture)
 
 **تاريخ القرار:** 2026-07-16  
-**الحالة:** المعتمد (`Accepted`)  
+**الحالة:** مقترح ومشروط (`Proposed — Conditional`) — بانتظار التحقق العملي بقياسات ونماذج إثبات المفهوم في **المرحلة 01 (PoCs & Benchmarks)**. لا يُعتبر هذا القرار نهائياً (`Accepted`) حتى تُثبت PoCs المرحلة 01 جدواه على أجهزة الاختبار الفعلية، أو يُعاد تصنيفه كـ`Blocked`. (راجع `PHASE-00-REVIEW.md` — ملاحظة MAJ-05.)  
 **أصحاب المصلحة:** Principal Software Architect, Technical Program Manager, Principal Desktop & Database Engineers  
 
 ---
