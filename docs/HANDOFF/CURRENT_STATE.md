@@ -3,14 +3,14 @@
 **المشروع:** PC COMPTA Next (`Ahmed47-t/compta`)  
 **تاريخ آخر تحديث:** 2026-07-16  
 **الفرع النشط (`Active Branch`):** `arena/019f69c9-compta`  
-**المرحلة الحالية المنجزة:** **Phase 00 (`Project Governance & Permanent Repository Memory Setup`)**  
-**المرحلة التالية المستهدفة:** **Phase 01 (`Discovery, PoCs & Architectural Benchmarks`)**  
+**المرحلة الحالية:** **Phase 00 (`Project Governance & Permanent Repository Memory Setup`) — مُسلَّمة للمراجعة المستقلة (`Pending Independent Review`)**  
+**المرحلة التالية المستهدفة:** **Phase 01 (`Discovery, PoCs & Architectural Benchmarks`) — معلَّقة حتى قبول المرحلة 00**  
 
 ---
 
 ## 1. ملخص الوضع الراهن
 
-تم الانتهاء بنجاح من **المرحلة 00**، وهي مرحلة التأسيس الهيكلي، والحوكمة، وإنشاء الذاكرة الدائمة للمشروع. أصبح مستودع GitHub الآن يمتلك توثيقاً دقيقاً وشاملاً لكل جوانب التطوير الفنية والمحاسبية والجبائية والأمنية، مستخلصاً من تحليلات النظام ومقترحات المشروع (`MASTER_PLAN_PCCOMPTA_COMPLETE.md, improved_plan_pccompta_v2.md, ocr_accuracy_offline_vs_hybrid.md`).
+تم إنجاز وإيداع مخرجات **المرحلة 00** (التأسيس الهيكلي، والحوكمة، والذاكرة الدائمة للمشروع) و**تسليمها للمراجعة المستقلة**؛ قرار قبولها يصدر عن المراجع في `docs/PHASES/PHASE-00-REVIEW.md`. أصبح مستودع GitHub الآن يمتلك توثيقاً دقيقاً وشاملاً لكل جوانب التطوير الفنية والمحاسبية والجبائية والأمنية، مستخلصاً من تحليلات النظام ومقترحات المشروع (`MASTER_PLAN_PCCOMPTA_COMPLETE.md, improved_plan_pccompta_v2.md, ocr_accuracy_offline_vs_hybrid.md`).
 
 ---
 
