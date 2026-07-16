@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دراسة جدوى: برنامج محاسبة جزائري ذكي</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DejaVu Sans', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.8;
+            color: #333;
+        }
+        
+        .rtl {
+            direction: rtl;
+            text-align: right;
+        }
+        
+        h1 {
+            font-size: 22pt;
+            color: #1a5276;
+            text-align: center;
+            margin: 30px 0 20px 0;
+            padding: 15px;
+            background-color: #eaf2f8;
+            border-radius: 10px;
+            border: 2px solid #1a5276;
+        }
+        
+        h2 {
+            font-size: 14pt;
+            color: #2874a6;
+            margin: 20px 0 12px 0;
+            padding: 8px;
+            background-color: #d4e6f1;
+            border-right: 4px solid #2874a6;
+            border-radius: 5px;
+        }
+        
+        h3 {
+            font-size: 12pt;
+            color: #1e8449;
+            margin: 15px 0 8px 0;
+            padding: 6px;
+            background-color: #d5f5e3;
+            border-radius: 5px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 9pt;
+        }
+        
+        th {
+            background-color: #1a5276;
+            color: white;
+            padding: 10px 6px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 8px 6px;
+            border: 1px solid #bdc3c7;
+            text-align: center;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .info-box {
+            background-color: #eaf2f8;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 12px 0;
+        }
+        
+        .warning-box {
+            background-color: #fef9e7;
+            border: 2px solid #f39c12;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 12px 0;
+        }
+        
+        .danger-box {
+            background-color: #fadbd8;
+            border: 2px solid #e74c3c;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 12px 0;
+        }
+        
+        .success-box {
+            background-color: #d5f5e3;
+            border: 2px solid #27ae60;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 12px 0;
+        }
+        
+        ul, ol {
+            margin: 8px 0 8px 25px;
+            padding-right: 15px;
+        }
+        
+        li {
+            margin: 5px 0;
+        }
+        
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 8pt;
+        }
+        
+        pre {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 7pt;
+            overflow-x: auto;
+            direction: ltr;
+            text-align: left;
+            margin: 10px 0;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #27ae60;
+            font-size: 11pt;
+        }
+        
+        .cover {
+            text-align: center;
+            padding: 80px 40px;
+            page-break-after: always;
+        }
+        
+        .cover h1 {
+            font-size: 26pt;
+            margin-bottom: 25px;
+        }
+        
+        .cover .subtitle {
+            font-size: 14pt;
+            color: #7f8c8d;
+            margin: 15px 0;
+        }
+        
+        .cover .date {
+            font-size: 11pt;
+            color: #95a5a6;
+            margin-top: 40px;
+        }
+        
+        .toc-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .toc-list li {
+            margin: 8px 0;
+            padding: 5px 0;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- صفحة الغلاف -->
+    <div class="cover">
+        <h1>📊 دراسة جدوى شاملة</h1>
+        <div class="subtitle">برنامج محاسبة جزائري ذكي مدعوم بالذكاء الاصطناعي</div>
+        <hr style="width: 50%; margin: 25px auto;">
+        <p style="font-size: 12pt; color: #2c3e50;">
+            <strong>يتوافق مع النظام المحاسبي المالي (SCF)</strong><br>
+            <strong>حل متكامل لمسح الوثائق OCR</strong><br>
+            <strong>ويتكامل مع منظومة الفوترة الإلكترونية (DGI)</strong>
+        </p>
+        <hr style="width: 50%; margin: 25px auto;">
+        <div class="date">
+            <p>تاريخ الإعداد: 2026-07-10</p>
+            <p>من إعداد: Arena.ai Agent</p>
+        </div>
+    </div>
+    
+    <!-- الفهرس -->
+    <div class="rtl">
+        <h1>📋 فهرس المحتويات</h1>
+        <ol class="toc-list">
+            <li><a href="#summary">ملخص تنفيذي</a></li>
+            <li><a href="#market">تحليل السوق</a></li>
+            <li><a href="#competition">تحليل المنافسين</a></li>
+            <li><a href="#financial">التحليل المالي</a></li>
+            <li><a href="#technical">الخطة التقنية</a></li>
+            <li><a href="#team">الفريق المطلوب</a></li>
+            <li><a href="#risks">المخاطر والتحديات</a></li>
+            <li><a href="#legal">الوضع القانوني</a></li>
+            <li><a href="#dgi">فرصة التكامل مع DGI</a></li>
+            <li><a href="#roadmap">خارطة الطريق</a></li>
+            <li><a href="#scanner-hardware">حل مسح الوثائق - Hardware</a></li>
+            <li><a href="#scanner-ocr">حل OCR - PaddleOCR + OpenVINO</a></li>
+            <li><a href="#scanner-integration">التكامل مع برنامج المحاسبة</a></li>
+            <li><a href="#conclusion">الخلاصة والتوصيات</a></li>
+        </ol>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 1. ملخص تنفيذي -->
+    <div class="rtl" id="summary">
+        <h1>1. ملخص تنفيذي</h1>
+        
+        <div class="info-box">
+            <h3>💡 فكرة المشروع</h3>
+            <p>تطوير برنامج محاسبة جزائري ذكي يجمع بين:</p>
+            <ul>
+                <li>الامتثال الكامل للنظام المحاسبي المالي (SCF)</li>
+                <li>دمج تقنيات الذكاء الاصطناعي (AI)</li>
+                <li><strong>حل متكامل لمسح الوثائق (Scanner + OCR)</strong></li>
+                <li>التكامل مع منظومة الفوترة الإلكترونية للمديرية العامة للضرائب (DGI)</li>
+                <li>يعمل Offline بدون إنترنت</li>
+            </ul>
+        </div>
+        
+        <h2>1.1 لماذا الآن؟</h2>
+        <table>
+            <tr>
+                <th>العامل</th>
+                <th>الوضع الحالي</th>
+                <th>الفرصة</th>
+            </tr>
+            <tr>
+                <td>السوق</td>
+                <td>+1.3 مليون شركة</td>
+                <td>نقص حاد في الحلول الحديثة</td>
+            </tr>
+            <tr>
+                <td>المنافسة</td>
+                <td>DLG المهيمن (قديم)</td>
+                <td>فجوة كبيرة للابتكار</td>
+            </tr>
+            <tr>
+                <td>التوجه الحكومي</td>
+                <td>رقمنة الضرائب</td>
+                <td>تكامل مطلوب</td>
+            </tr>
+            <tr>
+                <td>AI + Scanner</td>
+                <td>غائب تقريباً</td>
+                <td>أول من يدخل يكسب السوق</td>
+            </tr>
+        </table>
+        
+        <h2>1.2 أرقام رئيسية</h2>
+        <table>
+            <tr>
+                <th>المؤشر</th>
+                <th>القيمة</th>
+            </tr>
+            <tr>
+                <td>حجم سوق البرمجيات المحاسبية في أفريقيا (2026)</td>
+                <td class="price">$487.6 مليون</td>
+            </tr>
+            <tr>
+                <td>معدل النمو السنوي</td>
+                <td>13.7%</td>
+            </tr>
+            <tr>
+                <td>عدد المؤسسات المستهدفة (جزائر)</td>
+                <td>+1.3 مليون</td>
+            </tr>
+            <tr>
+                <td>تكلفة MVP التقريبية</td>
+                <td class="price">4-6 مليون دج</td>
+            </tr>
+            <tr>
+                <td>نقطة التعادل</td>
+                <td>~125 عميل</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 2. تحليل السوق -->
+    <div class="rtl" id="market">
+        <h1>2. تحليل السوق</h1>
+        
+        <h2>2.1 حجم السوق</h2>
+        <table>
+            <tr>
+                <th>المؤشر</th>
+                <th>القيمة</th>
+                <th>المصدر</th>
+            </tr>
+            <tr>
+                <td>عدد المؤسسات الصغيرة والمتوسطة</td>
+                <td><strong>1.32 مليون</strong></td>
+                <td>وزارة التجارة 2022</td>
+            </tr>
+            <tr>
+                <td>عدد المؤسسات القانونية</td>
+                <td>~215,000</td>
+                <td>Statista 2021</td>
+            </tr>
+            <tr>
+                <td>حجم سوق البرمجيات المحاسبية (أفريقيا)</td>
+                <td><strong>$487.6 مليون</strong></td>
+                <td>Grand View Research 2026</td>
+            </tr>
+            <tr>
+                <td>معدل النمو السنوي</td>
+                <td><strong>13.7%</strong></td>
+                <td>Grand View Research</td>
+            </tr>
+        </table>
+        
+        <h2>2.2 نقاط القوة في السوق الجزائري</h2>
+        <div class="success-box">
+            <ul>
+                <li>سوق ضخم يضم أكثر من 1.3 مليون شركة</li>
+                <li>نظام محاسبي موحد (SCF) يسهل التوافق</li>
+                <li>نقص كبير في الحلول الحديثة</li>
+                <li>لا توجد حلول AI محاسبية تقريباً</li>
+                <li>لا توجد حلول Scanner + OCR متكاملة</li>
+                <li>منافس واحد مهيمن (DLG) بأسعار مرتفعة</li>
+            </ul>
+        </div>
+        
+        <h2>2.3 نقاط الضعف في السوق الجزائري</h2>
+        <div class="danger-box">
+            <ul>
+                <li>ضعف البنية التحتية الرقمية</li>
+                <li>عدم استقرار الإنترنت</li>
+                <li><strong>تراكم الوثائق الورقية (فواتير، إيصالات)</strong></li>
+                <li>ضعف القوة الشرائية</li>
+                <li>نقص الكفاءات في AI</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 3. تحليل المنافسين -->
+    <div class="rtl" id="competition">
+        <h1>3. تحليل المنافسين</h1>
+        
+        <h2>3.1 المنافسون المحليون</h2>
+        <table>
+            <tr>
+                <th>المنافس</th>
+                <th>نقاط القوة</th>
+                <th>نقاط الضعف</th>
+                <th>السعر</th>
+            </tr>
+            <tr>
+                <td><strong>DLG (PC Compta)</strong></td>
+                <td>المهيمن، دعم قوي</td>
+                <td>قديم، Desktop فقط، لا AI، لا Scanner</td>
+                <td>~16,500 د.ج/سنة</td>
+            </tr>
+            <tr>
+                <td>MegaSoft</td>
+                <td>واجهة أفضل</td>
+                <td>محدود الانتشار</td>
+                <td>غير معروف</td>
+            </tr>
+            <tr>
+                <td>Sage (دولي)</td>
+                <td>متقدم تقنياً</td>
+                <td>مكلف، لا دعم SCF، لا Scanner</td>
+                <td>$200+/شهر</td>
+            </tr>
+        </table>
+        
+        <h2>3.2 تحليل DLG - المنافس الرئيسي</h2>
+        <div class="warning-box">
+            <h3>المشاكل المعروفة في DLG PC COMPTA:</h3>
+            <ul>
+                <li>❌ ليس سحابياً - لا مزامنة بين الأجهزة</li>
+                <li>❌ لا استيراد من Excel</li>
+                <li>❌ لا Scanner أو OCR</li>
+                <li>❌ لا AI أو أتمتة</li>
+                <li>❌ خدمة عملاء بطيئة</li>
+                <li>❌ يعتمد على مفتاح USB</li>
+            </ul>
+        </div>
+        
+        <div class="success-box">
+            <h3>✅ الفجوات = فرصتك</h3>
+            <p><strong>لا يوجد أي منافس يوفر حل Scanner + OCR متكامل!</strong></p>
+        </div>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 4. التحليل المالي -->
+    <div class="rtl" id="financial">
+        <h1>4. التحليل المالي</h1>
+        
+        <h2>4.1 تكاليف التطوير (MVP)</h2>
+        <table>
+            <tr>
+                <th>البند</th>
+                <th>التفاصيل</th>
+                <th>التكلفة (د.ج)</th>
+            </tr>
+            <tr>
+                <td>مطور Full-Stack</td>
+                <td>6 أشهر × 150,000</td>
+                <td>900,000</td>
+            </tr>
+            <tr>
+                <td>مطور AI/OCR</td>
+                <td>4 أشهر × 200,000</td>
+                <td>800,000</td>
+            </tr>
+            <tr>
+                <td>UI/UX Designer</td>
+                <td>2 أشهر × 120,000</td>
+                <td>240,000</td>
+            </tr>
+            <tr>
+                <td>استضافة سحابية</td>
+                <td>سنة</td>
+                <td>200,000</td>
+            </tr>
+            <tr>
+                <td>PaddleOCR + OpenVINO</td>
+                <td>تكامل + تطوير</td>
+                <td>300,000</td>
+            </tr>
+            <tr>
+                <td>قانونية وتسجيل</td>
+                <td>-</td>
+                <td>250,000</td>
+            </tr>
+            <tr>
+                <td>تسويق أولي</td>
+                <td>-</td>
+                <td>400,000</td>
+            </tr>
+            <tr>
+                <td>طوارئ (10%)</td>
+                <td>-</td>
+                <td>400,000</td>
+            </tr>
+            <tr style="background-color: #d5f5e3; font-weight: bold;">
+                <td><strong>الإجمالي</strong></td>
+                <td></td>
+                <td><strong>4,000,000 - 5,500,000</strong></td>
+            </tr>
+        </table>
+        
+        <h2>4.2 تكاليف التشغيل الشهرية</h2>
+        <table>
+            <tr>
+                <th>البند</th>
+                <th>التكلفة (د.ج/شهر)</th>
+            </tr>
+            <tr>
+                <td>الاستضافة السحابية</td>
+                <td>50,000 - 100,000</td>
+            </tr>
+            <tr>
+                <td>دعم فني</td>
+                <td>100,000 - 200,000</td>
+            </tr>
+            <tr>
+                <td>تسويق مستمر</td>
+                <td>50,000 - 150,000</td>
+            </tr>
+            <tr>
+                <td>إدارة ومحاسبة</td>
+                <td>50,000</td>
+            </tr>
+            <tr style="background-color: #d5f5e3; font-weight: bold;">
+                <td><strong>الإجمالي</strong></td>
+                <td><strong>250,000 - 500,000</strong></td>
+            </tr>
+        </table>
+        
+        <h2>4.3 نموذج التسعير المقترح</h2>
+        <table>
+            <tr>
+                <th>الباقة</th>
+                <th>السعر</th>
+                <th>المميزات</th>
+            </tr>
+            <tr>
+                <td><strong>مجانية</strong></td>
+                <td>0</td>
+                <td>50 إدخال/شهر</td>
+            </tr>
+            <tr>
+                <td><strong>أساسية</strong></td>
+                <td class="price">4,900 د.ج/شهر</td>
+                <td>500 إدخال، تقارير SCF، Scanner</td>
+            </tr>
+            <tr>
+                <td><strong>متقدمة</strong></td>
+                <td class="price">14,900 د.ج/شهر</td>
+                <td>غير محدود، AI، OCR، تقارير متقدمة</td>
+            </tr>
+            <tr>
+                <td><strong>مؤسسية</strong></td>
+                <td class="price">49,900 د.ج/شهر</td>
+                <td>كل الميزات، دعم مخصص، تدريب</td>
+            </tr>
+        </table>
+        
+        <h2>4.4 نقطة التعادل</h2>
+        <div class="info-box">
+            <p><strong>نقطة التعادل:</strong> ~125 عميل (بمتوسط 80,000 د.ج/سنة)</p>
+            <p><strong>المدة للوصول:</strong> 6-12 شهر</p>
+        </div>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 5. الخطة التقنية -->
+    <div class="rtl" id="technical">
+        <h1>5. الخطة التقنية</h1>
+        
+        <h2>5.1 المكدس التقني (Tech Stack)</h2>
+        <table>
+            <tr>
+                <th>الطبقة</th>
+                <th>التقنيات</th>
+            </tr>
+            <tr>
+                <td><strong>Frontend</strong></td>
+                <td>React.js, React Native (Mobile)</td>
+            </tr>
+            <tr>
+                <td><strong>Backend</strong></td>
+                <td>Django REST API, Python</td>
+            </tr>
+            <tr>
+                <td><strong>OCR Engine</strong></td>
+                <td>PaddleOCR + OpenVINO</td>
+            </tr>
+            <tr>
+                <td><strong>Database</strong></td>
+                <td>PostgreSQL, Redis</td>
+            </tr>
+            <tr>
+                <td><strong>Scanner</strong></td>
+                <td>TWAIN/ISIS drivers</td>
+            </tr>
+        </table>
+        
+        <h2>5.2 الميزات الأساسية</h2>
+        
+        <h3>5.2.1 Core Features (MVP)</h3>
+        <div class="success-box">
+            <ul>
+                <li>✅ دليل الحسابات (SCF)</li>
+                <li>✅ إدخال القيود اليومية</li>
+                <li>✅ تقارير: ميزان المراجعة، نتيجة النشاط، الميزانية</li>
+                <li>✅ نظام فوترة</li>
+                <li>✅ <strong>Scanner Integration (الأسكنر)</strong></li>
+                <li>✅ <strong>OCR لاستخراج البيانات</strong></li>
+            </ul>
+        </div>
+        
+        <h3>5.2.2 AI Features (المرحلة الثانية)</h3>
+        <div class="info-box">
+            <ul>
+                <li>🤖 تصنيف تلقائي للمعاملات</li>
+                <li>🤖 تنبيهات ذكية</li>
+                <li>🤖 توقعات مالية</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 6. الفريق -->
+    <div class="rtl" id="team">
+        <h1>6. الفريق المطلوب</h1>
+        
+        <h2>6.1 الفريق المثالي</h2>
+        <table>
+            <tr>
+                <th>الدور</th>
+                <th>المتطلبات</th>
+                <th>التكلفة/شهر</th>
+            </tr>
+            <tr>
+                <td><strong>المؤسس/CEO</strong></td>
+                <td>إدارة، مبيعات</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>Lead Developer</strong></td>
+                <td>5+ سنوات Django, React</td>
+                <td>150,000 - 200,000</td>
+            </tr>
+            <tr>
+                <td><strong>OCR/AI Developer</strong></td>
+                <td>خبرة في PaddleOCR, OpenVINO</td>
+                <td>200,000 - 250,000</td>
+            </tr>
+            <tr>
+                <td><strong>UI/UX Designer</strong></td>
+                <td>3+ سنوات</td>
+                <td>80,000 - 120,000</td>
+            </tr>
+            <tr>
+                <td><strong>محاسب/محلل مالي</strong></td>
+                <td>خبرة في SCF</td>
+                <td>50,000 - 80,000</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 7. المخاطر -->
+    <div class="rtl" id="risks">
+        <h1>7. المخاطر والتحديات</h1>
+        
+        <h2>7.1 إحصائيات فشل المشاريع</h2>
+        <table>
+            <tr>
+                <th>نوع المشروع</th>
+                <th>نسبة الفشل</th>
+            </tr>
+            <tr>
+                <td>AI Startups</td>
+                <td class="danger-box">85-90%</td>
+            </tr>
+            <tr>
+                <td>Fintech</td>
+                <td class="danger-box">75%</td>
+            </tr>
+            <tr>
+                <td>SaaS / B2B</td>
+                <td>~50%</td>
+            </tr>
+        </table>
+        
+        <h2>7.2 أسباب الفشل الرئيسية</h2>
+        <table>
+            <tr>
+                <th>السبب</th>
+                <th>النسبة</th>
+                <th>الحلول</th>
+            </tr>
+            <tr>
+                <td>لا يوجد حاجة في السوق</td>
+                <td class="danger-box">42%</td>
+                <td>MVP سريع، validation</td>
+            </tr>
+            <tr>
+                <td>نفاد المال</td>
+                <td class="danger-box">29%</td>
+                <td>Budget صارم</td>
+            </tr>
+            <tr>
+                <td>فريق غير مناسب</td>
+                <td>23%</td>
+                <td>Partner مع CTO</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 8. الوضع القانوني -->
+    <div class="rtl" id="legal">
+        <h1>8. الوضع القانوني</h1>
+        
+        <h2>8.1 الخلاصة القانونية</h2>
+        <div class="success-box">
+            <h3>✅ لا يوجد ترخيص إلزامي رسمي</h3>
+            <ul>
+                <li>لا يوجد في الجزائر "هيئة اعتماد برامج محاسبة"</li>
+                <li>CNC يعتمد الأشخاص وليس البرامج</li>
+                <li>السوق مفتوح لمن يسبقه</li>
+            </ul>
+        </div>
+        
+        <div class="warning-box">
+            <h3>⚠️ ما يجب عليك فعله</h3>
+            <ul>
+                <li>التأكد من توافق البرنامج مع SCF</li>
+                <li>احترام شروط المرسوم 09-110</li>
+                <li>تسجيل البرنامج كملكية فكرية (ONDA)</li>
+                <li>احترام قانون حماية البيانات (ANPDCP)</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 9. DGI -->
+    <div class="rtl" id="dgi">
+        <h1>9. فرصة التكامل مع DGI</h1>
+        
+        <h2>9.1 المنصات الرسمية المتاحة</h2>
+        <table>
+            <tr>
+                <th>المنصة</th>
+                <th>الخدمة</th>
+                <th>الحالة</th>
+            </tr>
+            <tr>
+                <td><strong>جبايتك</strong></td>
+                <td>التصريح والدفع الإلكتروني</td>
+                <td>متاحة</td>
+            </tr>
+            <tr>
+                <td><strong>مساهمتك</strong></td>
+                <td>الخدمات الجبائية</td>
+                <td>متاحة</td>
+            </tr>
+            <tr>
+                <td><strong>FNE</strong></td>
+                <td>الفوترة الإلكترونية</td>
+                <td>تجريبية</td>
+            </tr>
+        </table>
+        
+        <div class="success-box">
+            <h3>✅ الميزة التنافسية</h3>
+            <p>لا يوجد برنامج محاسبة جزائري متكامل مع DGI + Scanner + OCR!</p>
+        </div>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 10. خارطة الطريق -->
+    <div class="rtl" id="roadmap">
+        <h1>10. خارطة الطريق (18 شهر)</h1>
+        
+        <h2>10.1 المرحلة 1: MVP (الأشهر 1-6)</h2>
+        <table>
+            <tr>
+                <th>الشهر</th>
+                <th>المهام</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>تخطيط، تصميم قاعدة البيانات، SCF mapping</td>
+            </tr>
+            <tr>
+                <td>2-3</td>
+                <td>تطوير Core + Scanner Integration</td>
+            </tr>
+            <tr>
+                <td>4-5</td>
+                <td>OCR Development + PaddleOCR Integration</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>اختبار، إطلاق Beta</td>
+            </tr>
+        </table>
+        
+        <h2>10.2 المرحلة 2: AI + Growth (الأشهر 7-18)</h2>
+        <ul>
+            <li>7-10: AI Features، DGI Integration</li>
+            <li>11-14: تطبيق موبايل، توسيع السوق</li>
+            <li>15-18: Enterprise features، شراكات</li>
+        </ul>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 11. حل Scanner Hardware -->
+    <div class="rtl" id="scanner-hardware">
+        <h1>11. حل مسح الوثائق - Hardware</h1>
+        
+        <div class="warning-box">
+            <h3>⚠️ السياق الجزائري</h3>
+            <ul>
+                <li>الإنترنت قد لا يكون مستقراً دائماً</li>
+                <li>الخصوصية المالية مطلوبة جداً</li>
+                <li>تراكم الوثائق: إيصالات، فواتير شراء، فواتير بيع</li>
+                <li>أحجام مختلفة من الوثائق</li>
+            </ul>
+        </div>
+        
+        <h2>11.1 المواصفات المطلوبة للاسكنر</h2>
+        <table>
+            <tr>
+                <th>المواصفة</th>
+                <th>الأهمية</th>
+                <th>التفاصيل</th>
+            </tr>
+            <tr>
+                <td><strong>ADF (Automatic Document Feeder)</strong></td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>لمسح صفحات متعددة بدون تدخل</td>
+            </tr>
+            <tr>
+                <td><strong>Flatbed مدمج</strong></td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>للإيصالات الصغيرة والكتب</td>
+            </tr>
+            <tr>
+                <td><strong>مسح تلقائي للحجم</strong></td>
+                <td>⭐⭐⭐⭐</td>
+                <td>يتعرف على حجم الورقة تلقائياً</td>
+            </tr>
+            <tr>
+                <td><strong>Ultrasonic Multi-Feed Detection</strong></td>
+                <td>⭐⭐⭐⭐</td>
+                <td>منع ازدواج الورق</td>
+            </tr>
+            <tr>
+                <td><strong>Duplex Scanning</strong></td>
+                <td>⭐⭐⭐</td>
+                <td>مسح الوجهين تلقائياً</td>
+            </tr>
+        </table>
+        
+        <h2>11.2 الأحجام المدعومة</h2>
+        <table>
+            <tr>
+                <th>الحجم</th>
+                <th>الاستخدام</th>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td>الفواتير، التقارير</td>
+            </tr>
+            <tr>
+                <td>A5</td>
+                <td>إيصالات صغيرة</td>
+            </tr>
+            <tr>
+                <td>A6</td>
+                <td>إيصالات (ورق حراري)</td>
+            </tr>
+            <tr>
+                <td>B5</td>
+                <td>كتب، كشوف</td>
+            </tr>
+            <tr>
+                <td>Legal</td>
+                <td>عقود طويلة (355 ملم)</td>
+            </tr>
+        </table>
+        
+        <h2>11.3 الطابعات الموصى بها</h2>
+        
+        <h3>HP ScanJet Pro 2600 f1</h3>
+        <div class="success-box">
+            <table>
+                <tr>
+                    <th>المواصفة</th>
+                    <th>القيمة</th>
+                </tr>
+                <tr>
+                    <td>ADF</td>
+                    <td>60 ورقة</td>
+                </tr>
+                <tr>
+                    <td>Flatbed</td>
+                    <td>مدمج</td>
+                </tr>
+                <tr>
+                    <td>السرعة</td>
+                    <td>25 صفحة/دقيقة</td>
+                </tr>
+                <tr>
+                    <td>الدقة</td>
+                    <td>600 DPI</td>
+                </tr>
+                <tr>
+                    <td>الأحجام</td>
+                    <td>A4, A5, A6, B5, Letter, Legal</td>
+                </tr>
+                <tr>
+                    <td>السعر</td>
+                    <td class="price">$250-350</td>
+                </tr>
+            </table>
+        </div>
+        
+        <h3>Fujitsu ScanSnap iX1600</h3>
+        <div class="info-box">
+            <table>
+                <tr>
+                    <th>المواصفة</th>
+                    <th>القيمة</th>
+                </tr>
+                <tr>
+                    <td>ADF</td>
+                    <td>50 ورقة</td>
+                </tr>
+                <tr>
+                    <td>السرعة</td>
+                    <td>40 صفحة/دقيقة</td>
+                </tr>
+                <tr>
+                    <td>WiFi</td>
+                    <td>مدمج</td>
+                </tr>
+                <tr>
+                    <td>السعر</td>
+                    <td class="price">$450</td>
+                </tr>
+            </table>
+        </div>
+        
+        <h3>Canon DR-C240</h3>
+        <div class="info-box">
+            <table>
+                <tr>
+                    <th>المواصفة</th>
+                    <th>القيمة</th>
+                </tr>
+                <tr>
+                    <td>ADF</td>
+                    <td>60 ورقة</td>
+                </tr>
+                <tr>
+                    <td>السرعة</td>
+                    <td>45 صفحة/دقيقة</td>
+                </tr>
+                <tr>
+                    <td>USB</td>
+                    <td>USB 3.0</td>
+                </tr>
+                <tr>
+                    <td>السعر</td>
+                    <td class="price">$400-500</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 12. حل OCR -->
+    <div class="rtl" id="scanner-ocr">
+        <h1>12. حل OCR - PaddleOCR + OpenVINO</h1>
+        
+        <div class="warning-box">
+            <h3>⚠️ لماذا هذا الحل؟</h3>
+            <ul>
+                <li><strong>PaddleOCR:</strong> محرك OCR قوي ومجاني يدعم العربية</li>
+                <li><strong>OpenVINO:</strong> تسريع على معالجات Intel بدون GPU</li>
+                <li><strong>Offline:</strong> يعمل بدون إنترنت</li>
+                <li><strong>Fast:</strong> قراءة فاتورة في أقل من 3 ثوانٍ</li>
+                <li><strong>Private:</strong> كل البيانات تبقى محلياً</li>
+            </ul>
+        </div>
+        
+        <h2>12.1 البنية التقنية</h2>
+        <pre>
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   Scanner   │────▶│  Backend    │────▶│  Accounting  │
+│   (USB)     │     │  (.exe)    │     │   Software   │
+└─────────────┘     └─────────────┘     └─────────────┘
+                           │
+                           ▼
+                    ┌─────────────┐
+                    │   Paddle    │
+                    │   OCR +     │
+                    │   OpenVINO  │
+                    │   (CPU)     │
+                    └─────────────┘
+        </pre>
+        
+        <h2>12.2 خطوات التطوير</h2>
+        
+        <h3>Step 1: تصدير النموذج من PaddlePaddle إلى ONNX</h3>
+        <pre>
+python tools/export_model.py \
+  -c configs/det/det_mv3_db.yaml \
+  -o Global.pretrained_model=./pretrain_models/ch_PP-OCRv4/ \
+  -o Global.save_inference_dir=./inference_model
+        </pre>
+        
+        <h3>Step 2: تحويل ONNX إلى OpenVINO</h3>
+        <pre>
+mo --input_model ocr_model.onnx \
+  --output_dir openvino_model \
+  --data_type FP32
+        </pre>
+        
+        <h3>Step 3: تحويل إلى .exe</h3>
+        <pre>
+# PyInstaller (أسهل)
+pip install pyinstaller
+pyinstaller --onefile --windowed ocr_backend.py
+
+# أو Nuitka (أسرع)
+pip install nuitka
+nuitka --standalone ocr_backend.py
+        </pre>
+        
+        <h2>12.3 Parser - استخراج البيانات</h2>
+        <pre>
+def parse_invoice(text: str) -> dict:
+    # البحث عن المبلغ
+    amount_pattern = r'(\d{1,3}[,\s]?\d{3}[,\s]?\d{3})'
+    amounts = re.findall(amount_pattern, text)
+    total = float(amounts[-1].replace(',', '')) if amounts else 0
+    
+    # البحث عن التاريخ
+    date_pattern = r'(\d{1,2}[/\-]\d{1,2}[/\-]\d{2,4})'
+    dates = re.findall(date_pattern, text)
+    invoice_date = dates[0] if dates else ""
+    
+    # البحث عن رقم الفاتورة
+    invoice_pattern = r'(?:فاتورة|Facture|Invoice)[#\s]*(\w+)'
+    invoice_match = re.search(invoice_pattern, text)
+    
+    return {
+        "vendor": extract_vendor(text),
+        "date": invoice_date,
+        "amount": total,
+        "invoice_number": invoice_match.group(1) if invoice_match else "",
+        "raw_text": text
+    }
+        </pre>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 13. التكامل -->
+    <div class="rtl" id="scanner-integration">
+        <h1>13. التكامل مع برنامج المحاسبة</h1>
+        
+        <h2>13.1 المواصفات الأدنى للعميل</h2>
+        <table>
+            <tr>
+                <th>المكون</th>
+                <th>الحد الأدنى</th>
+                <th>الموصى به</th>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td><strong>8 GB</strong></td>
+                <td>16 GB</td>
+            </tr>
+            <tr>
+                <td>المعالج</td>
+                <td><strong>Intel Core i5 (10th gen+)</strong></td>
+                <td>Intel Core i7</td>
+            </tr>
+            <tr>
+                <td>مساحة التخزين</td>
+                <td>10 GB free</td>
+                <td>20 GB free</td>
+            </tr>
+            <tr>
+                <td>نظام التشغيل</td>
+                <td>Windows 10 (64-bit)</td>
+                <td>Windows 11</td>
+            </tr>
+        </table>
+        
+        <div class="info-box">
+            <p><strong>⏱️ الأداء:</strong> قراءة فاتورة في أقل من 3 ثوانٍ</p>
+            <p><strong>📄 مسح 10 فواتير:</strong> أقل من 30 ثانية</p>
+        </div>
+        
+        <h2>13.2 طرق التكامل</h2>
+        
+        <h3>Option 1: REST API (HTTP) - الأسهل</h3>
+        <div class="success-box">
+            <ul>
+                <li>Backend يشغل على <code>localhost:5000</code></li>
+                <li>البرنامج يرسل HTTP requests</li>
+            </ul>
+        </div>
+        
+        <h3>Option 2: Shared Folder - الأبسط</h3>
+        <div class="success-box">
+            <ul>
+                <li>Backend يراقب مجلد معين</li>
+                <li>يقرأ الصور → يحولها → يحفظ JSON</li>
+            </ul>
+        </div>
+        
+        <h2>13.3 التكامل مع SCF</h2>
+        <table>
+            <tr>
+                <th>بيانات الفاتورة</th>
+                <th>التصنيف SCF</th>
+                <th>الحساب</th>
+            </tr>
+            <tr>
+                <td>فاتورة شراء</td>
+                <td>مصاريف</td>
+                <td>6xx (مشتريات، خدمات)</td>
+            </tr>
+            <tr>
+                <td>فاتورة بيع</td>
+                <td>إيرادات</td>
+                <td>7xx (أقساط الأنشطة)</td>
+            </tr>
+            <tr>
+                <td>TVA مسترجع</td>
+                <td>ضريبة</td>
+                <td>445xxx (ضريبة القيمة المضافة)</td>
+            </tr>
+            <tr>
+                <td>إيصال قبض</td>
+                <td>نقدية</td>
+                <td>53xx (خزينة)</td>
+            </tr>
+        </table>
+        
+        <h2>13.4 مقارنة مع الحلول الأخرى</h2>
+        <table>
+            <tr>
+                <th>الحل</th>
+                <th>Offline</th>
+                <th>عربي</th>
+                <th>مجاني</th>
+                <th>التكلفة</th>
+            </tr>
+            <tr>
+                <td><strong>PaddleOCR + OpenVINO</strong></td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td class="price">مجاني</td>
+            </tr>
+            <tr>
+                <td>Veryfi API</td>
+                <td>❌</td>
+                <td>⚠️</td>
+                <td>❌</td>
+                <td>$19.99+/شهر</td>
+            </tr>
+            <tr>
+                <td>Dext Prepare</td>
+                <td>❌</td>
+                <td>⚠️</td>
+                <td>❌</td>
+                <td>$23/عميل</td>
+            </tr>
+            <tr>
+                <td>AWS Textract</td>
+                <td>❌</td>
+                <td>⚠️</td>
+                <td>❌</td>
+                <td>$1.50/1000 صفحة</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <!-- 14. الخلاصة -->
+    <div class="rtl" id="conclusion">
+        <h1>14. الخلاصة والتوصيات</h1>
+        
+        <h2>14.1 هل يجب أن تبدأ؟</h2>
+        
+        <div class="success-box">
+            <h3>✅ نعم، إذا:</h3>
+            <ul>
+                <li>لديك شغف حقيقي بالمشكلة</li>
+                <li>يمكنك تمويل 6-12 شهر بدون دخل</li>
+                <li>لديك أو تستطيع جذب CTO</li>
+            </ul>
+        </div>
+        
+        <div class="danger-box">
+            <h3>❌ لا، إذا:</h3>
+            <ul>
+                <li>تبحث عن دخل سريع</li>
+                <li>ليس لديك خبرة تقنية أو فريق</li>
+            </ul>
+        </div>
+        
+        <h2>14.2 نصائح ذهبية</h2>
+        <div class="warning-box">
+            <ol>
+                <li><strong>قبل الكود:</strong> ابنِ MVP بدون كود وجرب بيعه</li>
+                <li><strong>Launch fast:</strong> لا تنتظر until perfect</li>
+                <li><strong>Revenue مبكر:</strong> لا تعتمد على funding فقط</li>
+                <li><strong>فهم العميل:</strong> تحدث مع 50 محاسب قبل البدء</li>
+            </ol>
+        </div>
+        
+        <h2>14.3 نقاط التفرق عن DLG</h2>
+        <table>
+            <tr>
+                <th>الميزة</th>
+                <th>DLG</th>
+                <th>برنامجك</th>
+            </tr>
+            <tr>
+                <td>Cloud/SaaS</td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td>AI Features</td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td>Scanner Integration</td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td>OCR لاستخراج البيانات</td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td>Offline Mode</td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td>تكامل DGI</td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+        </table>
+        
+        <h2>14.4 الميزة الفريدة: Scanner + OCR متكامل</h2>
+        <div class="success-box">
+            <h3>✅ ما يميزك عن المنافسين</h3>
+            <ul>
+                <li><strong>حل متكامل:</strong> Scanner + OCR + المحاسبة في مكان واحد</li>
+                <li><strong>يعمل Offline:</strong> بدون إنترنت في أي مكتب</li>
+                <li><strong>خصوصية كاملة:</strong> البيانات لا تغادر الجهاز</li>
+                <li><strong>سريع:</strong> قراءة فاتورة في أقل من 3 ثوانٍ</li>
+                <li><strong>مجاني:</strong> PaddleOCR + OpenVINO</li>
+            </ul>
+        </div>
+        
+        <h1 style="margin-top: 40px; text-align: center; color: #27ae60;">
+            💡 السوق ينتظرك. Scanner + OCR = الميزة التنافسية الوحيدة!
+        </h1>
+        
+        <hr style="margin: 25px 0;">
+        
+        <div style="text-align: center; color: #7f8c8d; font-size: 9pt;">
+            <p>هذه دراسة جدوى إعدادية من Arena.ai Agent</p>
+            <p>2026-07-10</p>
+            <p>⚠️ هذه الدراسة استرشادية وتتطلب تدقيقاً قانونياً ومالياً متخصصاً</p>
+        </div>
+    </div>
+    
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a18f0c63bf52b6d4',t:'MTc4MzY4MTA1NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
